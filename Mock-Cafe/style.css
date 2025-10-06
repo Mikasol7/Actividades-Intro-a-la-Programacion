@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: "Poppins", sans-serif;	
+}
+body {
+    background-color: #fbf4ec;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: #1f1736;
+    padding: 60px 20px 40px;
+    background-color: #7b54a1;
+    background: linear-gradient(0deg, #7b54a1 0%, hsl(290, 60%, 70%) 100%);
+}
+main {
+    padding: 0.5rem 1rem;
+}
+
+h2 {
+	text-align: center;
+    border-bottom: 3px double hsl(279, 58%, 15%);
+	margin-bottom: 0.5rem;
+}
+.icono-cafe {
+  width: 100px;
+  height: auto;
+}
+.productos-seccion {
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+}
+article {
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 4px 4px 0 #0001;
+	background-color: white;
+	padding-bottom: 0.25rem;
+}
+
+h3 {
+    padding: 0.5rem 1rem;
+	color: white;
+
+}
+
+.combo {
+    background: hsl(30, 80%, 20%);
+	background: linear-gradient(90deg, hsl(249, 52%, 75%) 0%, hsl(290, 60%, 70%) 100%);
+}
+.café {
+    background: hsl(30, 80%, 20%);
+	background: linear-gradient(90deg, hsl(249, 52%, 75%) 0%, hsl(290, 60%, 70%) 100%);
+}
+.tortas {
+    background: hsl(30, 80%, 20%);
+	background: linear-gradient(90deg, hsl(249, 52%, 75%) 0%, hsl(290, 60%, 70%) 100%);
+}
+.productos-contenedor {
+	padding: 0.5rem 0;
+}
+.producto {
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem 1rem;
+}
+.producto-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	font-size: large;
+}
+
+.producto-description {
+	font-size: small;
+	display: none;
+	color: #555;
+}
+.producto-extra {
+	display: flex;
+	padding: 0.5rem 1rem;
+	font-size: normal;
+	color: #555;
+    font-style: italic;
+}
+
+footer {
+    padding: 0.5rem 1rem;
+	font-size: normal;
+    text-align: center;
+}
+@media screen and (min-width: 481px) {
+    main {
+		padding: 0.5rem 2rem;
+	}
+
+	h2 {
+		padding: 1rem 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.productos-seccion {
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1rem 2rem;
+	}
+
+	article {
+		flex: 1;
+		flex-basis: max(400px, calc(50% - 1rem));
+	}
+
+	.producto-descripcion {
+		display: block;
+	}
+}
